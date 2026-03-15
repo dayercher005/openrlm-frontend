@@ -5,7 +5,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import ChatInput from "@/components/chat/input"
+import { Outlet } from 'react-router-dom'
 
 export default function Page() {
   return (
@@ -22,7 +22,7 @@ export default function Page() {
           </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          <ChatInput />
+          <Outlet />
         </div>
       </SidebarInset>
     </SidebarProvider>
