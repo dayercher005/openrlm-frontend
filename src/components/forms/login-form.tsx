@@ -14,7 +14,7 @@ export function LoginForm({
 }: React.ComponentProps<"div">) {
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <form>
+      <form action="http://127.0.0.1:8000/" method="POST">
         <FieldGroup>
           <div className="flex flex-col items-center gap-2 text-center">
             <a

@@ -2,7 +2,6 @@
 import * as React from "react"
 import {
   Settings2,
-  SquareTerminal,
 } from "lucide-react"
 import { NavMain } from "@/components/sidebar/nav-main"
 import { NavUser } from "@/components/sidebar/nav-user"
@@ -22,26 +21,6 @@ const data = {
     avatar: "/avatars/rlm.jpg",
   },
   navMain: [
-    {
-      title: "Chat History",
-      url: "#",
-      icon: SquareTerminal,
-      isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
-    },
     {
       title: "Settings",
       url: "#",

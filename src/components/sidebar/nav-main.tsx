@@ -1,6 +1,6 @@
 "use client"
 
-import { Plus, ChevronRight, type LucideIcon } from "lucide-react"
+import { Plus, ChevronRight, MessageCircle, type LucideIcon } from "lucide-react"
 
 import {
   Collapsible,
@@ -16,6 +16,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
+import { Link } from 'react-router-dom'
 
 export function NavMain({
   items,
@@ -36,10 +37,21 @@ export function NavMain({
     <SidebarGroup>
       <SidebarMenu>
         <SidebarMenuItem className="py-5">
-          <SidebarMenuButton>
-            <Plus />
-            New Chat
-          </SidebarMenuButton>
+          <Link to="/">
+            <SidebarMenuButton>
+              <Plus />
+              New Conversation
+            </SidebarMenuButton>
+          </Link>
+        </SidebarMenuItem>
+
+        <SidebarMenuItem className="py-2.5">
+          <Link to="/conversations">
+            <SidebarMenuButton>
+              <MessageCircle />
+              Past Conversations
+            </SidebarMenuButton>
+          </Link>
         </SidebarMenuItem>
       </SidebarMenu>
       <SidebarMenu>
