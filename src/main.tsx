@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/log-in" Component={ LoginPage }></Route>
           <Route path="/" Component={ App }>
             <Route index Component={ ConversationCreate } />
-            <Route path="/conversations" Component={ConversationList} />
+            <Route path="/conversations" Component={ ConversationList } />
             <Route path="/conversations/:id" Component={ Conversation } />
           </Route>
         </Routes>
